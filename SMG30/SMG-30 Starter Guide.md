@@ -252,13 +252,24 @@ For this guide, I'll be assuming a default FPS template, just because this makes
 For our animations to work correctly, we need to set up the player character correctly.
 
 Let's head to our player character, which you can find in `Content -> FirstPerson -> Blueprints`.
-![[Screenshot 2024-02-16 at 17.16.44.png]]
+
+![](Screenshot%202024-02-16%20at%2017.16.44.png)
+
 Firstly, we need to add a new skeletal mesh for the SMG-30 to use. To do this, let's first select the `FirstPersonMesh`, or whatever you're calling your hands mesh.
-![[Screenshot 2024-02-16 at 17.52.28.png]]
+
+![](Screenshot%202024-02-16%20at%2017.52.28.png)
+
 Then, we can add a new component, which will be a Skeletal Mesh Component. In my case, I'll name it `SMG-30` for clarity.
-![[Screenshot 2024-02-16 at 17.52.48.png]]![[Screenshot 2024-02-16 at 17.53.10.png]]
+
+![](Screenshot%202024-02-16%20at%2017.52.48.png)
+
 With this added, we need two more things to complete the basic setup required for our animations to appear correctly: Setting our weapon and our attachment socket. By setting the correct attachment socket, we can ensure that the weapon motion in the animations. To do this, simply go over to the `parent socket` property of our skeletal mesh and set it to `ik_hand_gun`.
-![[Screenshot 2024-02-16 at 17.53.59.png]]
+
+![](Screenshot%202024-02-16%20at%2017.53.59.png)
+![](Screenshot%202024-02-16%20at%2017.53.10.png)
+
 Finally, we can set our mesh to be our SMG-30. To do so, just go down to the `Skeletal Mesh Asset` and select the `SK_SMG-30`.
-![[Screenshot 2024-02-16 at 17.54.20.png]]
+
+![](Screenshot%202024-02-16%20at%2017.54.20.png)
+
 You can now play any of the animations supplied with the SMG-30!
